@@ -1,0 +1,14 @@
+.collections{
+    top: 10vh;
+    background-color: rgb(240, 247, 229);
+    position: relative;
+    width: 100%;
+    .row{
+        background-color: rgb(244, 252, 229);
+        width: 98%;
+        margin: auto;
+        border-radius: 10%;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+    }
+}

@@ -1,0 +1,25 @@
+.item-new{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    .newsimg{
+        width: 100%;
+        height:200px;
+        &:hover{
+            border-radius: 30% 0 10%  0;
+            transition: 1s;
+        }
+    }
+    .newTitle{
+        text-align: center;
+        color: #333;
+        &:hover{
+            color: white;
+        }
+    }
+}
+@media(max-width:600px){
+    .item-new{
+        width: 100%;
+    }
+}

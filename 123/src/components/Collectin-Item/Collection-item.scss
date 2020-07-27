@@ -1,0 +1,31 @@
+.collection_item{
+    background-color: #333;
+    padding: 1rem;
+    margin: auto;
+    text-align: left;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    .collection_name{
+        text-align: left;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        color: #eeeeee;
+    }
+}
+
+
+@media(max-width:700px) {
+    .collection_item{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        .collection_name{
+            text-align: left;
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            color: #eeeeee;
+        }
+    }
+}

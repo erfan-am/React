@@ -1,0 +1,105 @@
+.news{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../../assets/nback.jpg')no-repeat center/cover;
+    background-attachment: fixed;
+    .button_news{ 
+        width: 100%;
+    .formnews{
+        width: 80%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .title-news{
+            width: 60%;
+            select{
+                width:80%;
+                height: 50px;
+                outline: none;
+                border: none;
+                background-color: #eeeeeed7;
+                .news-option{
+                    padding: 2rem;
+                    background-color: #adadad;
+                    height: 50px;
+                }
+            }
+        }
+    
+        .search-box{
+            display:flex;
+            flex-direction: row;
+            width: 40%;
+            .search-news{
+                width:100%;
+                padding: .4rem;
+                color: white;
+                background-color: rgba(80, 80, 83, 0.404);
+                &:focus{
+                    animation: b-bottom .4s ease forwards;
+
+                    @keyframes b-bottom {
+                        0%{border-bottom: 0px;width: 0px;}
+                        100%{border-bottom:2px solid blue;width:100%;}
+                    }
+                }
+            }
+            label{
+                position: relative;
+                padding: 1rem;
+                background-color: #eeeeee;
+                position:static;
+            }
+        }
+       
+    }}
+    .news-content{
+        width: 100%;
+        background-color: #eeeeee;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px){
+    .news{
+        .button_news{
+            width: 100%;
+            .formnews{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .title-news{
+                    width: 100%;
+                    margin: .5rem;
+                    select{
+                        width: 100%;
+                    }
+                }
+                .search-box{
+                    width: 100%;
+                    margin: .5rem;
+                }
+            }
+        }
+        .news-content{
+            width: 100%;
+            background-color: #eeeeee;
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

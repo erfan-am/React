@@ -1,0 +1,47 @@
+.inetrtaimnet{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #eeeeee;
+    direction: rtl;
+    margin: auto;
+    z-index: 1;
+    width: 100%;
+    .cartt{
+        padding: 1rem;
+        margin: 10px auto  ;
+        text-align: right;
+        width:390px;
+        color:#333;
+        
+        .cart-image{
+            width: 350px;
+            height: 390px;
+            transition-delay: 0.2s;
+            position: relative;
+           
+        }
+       
+    }
+}
+
+
+
+@media(max-width:750px){
+    .inetrtaimnet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cartt{
+            width: 100%;
+
+            .cart-image{
+                width: 100%;
+                margin: auto;
+            }
+        }
+       
+    }
+    
+    
+}

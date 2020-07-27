@@ -1,0 +1,116 @@
+
+
+.ham-non{
+    display: none;
+}
+@media(max-width:601px){
+   .ham-non{
+       display: block;
+       .hamburger-ham{
+        display: block;
+        z-index: 9000000000000000;
+        background-color: #eeeeee;
+        height: 50px;
+        padding: 1rem;
+        position: sticky;
+        width: 100%;
+        #check{
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            left:4%;
+            z-index: 3000000000;
+            opacity:0;
+            cursor: pointer;
+          
+        }
+        .tags{
+            width: 30px;
+            position: static;
+            left: 2%;
+            .tag{
+                width: 100%;
+                height: 5px;
+                margin: 3px;
+                background-color: #333;
+                z-index: 200000000;
+               
+            }
+        }
+        .nav-bar-ham{
+            width: 80%;
+            height: 85%;
+            border: 5px solid;
+            margin-top: 30px;
+            background-color: white;
+            position: fixed;
+            transition: .5s ease;
+            .container-ham{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .logo-ham{
+                    display: block;
+                    position: fixed;
+                    width: 70px;
+                    border-radius: 50%;
+                    height: 70px;
+                    top: 1%;
+                  
+                    }
+                .nav-brand-ham{
+                    right: 3%;
+                    top: 3%;
+                    font-weight: bold;
+                    font-family:serif;
+                    position: fixed;
+                }
+
+                .list-items-ham{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:90px;
+                  
+                  .details-small-ham{
+                      display:block;
+                      padding: 0.5rem;
+                      margin-bottom: 30px;
+                      .media-small-ham{
+                          color: #000;
+                          z-index: 2000;
+                          display: inline;
+                          margin: 1rem;
+                      }
+
+                  }
+                  .list-small-ham{
+                      padding: 0.5rem;
+                      font-weight: bold;
+                        color: #333;
+                  }
+                  
+                }
+                .welocmw-nav{
+                    display: block;
+                    width: 150px;
+                    height: 100px;
+                    margin:30px auto;
+                }
+                
+            }
+        }
+    }
+    
+   
+    .heart-ham{
+        position: absolute;
+        right: 5%;
+        top: 12%;
+        margin-top: 15px;
+    }
+
+   }
+  
+}
